@@ -4,8 +4,7 @@
 }
 
 body {
-    background-color: rgba(128, 128, 128, 0.274);
-    ;
+    background-image: linear-gradient(to bottom, rgb(138, 247, 247) , rgba(168, 79, 79, 0.671));
 }
 
 h2 {
@@ -180,6 +179,20 @@ a {
         "nav"
         "h2"
         "parrafo";
+}
+
+.botonesAnimados:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+}
+
+.movimientoDeTexto:hover {
+    transform: translate(1px, 1px);
+    transition: all 3s;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
