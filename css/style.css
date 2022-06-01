@@ -1,0 +1,250 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.274);
+    ;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headerPaginas {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.containerUno {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 120px auto 65px;
+    grid-template-areas:
+        "nav"
+        "h2"
+        "parrafo"
+        "footer";
+}
+
+.headerIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(../assets/imagenes/argenplas1.jpg);
+    height: 250px;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2 {
+    grid-area: h2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.parrafo {
+    grid-area: parrafo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    font-size: 20px;
+    background-color: rgb(231, 59, 59);
+}
+
+
+.tituloPrincipal {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 65px;
+    font-size: 75px;
+    text-align: center;
+    color: rgb(220, 247, 220);
+}
+
+.ulNavGeneral {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navGeneral ul li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    width: 250px;
+    border-radius: 35px 35px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin: 5px;
+    background-color: rgb(32, 202, 202);
+}
+
+.videoCables {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.navDeProductos {
+    display: flex;
+    flex-direction: column;
+}
+
+.listaDeProductos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonProductos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100vh;
+    border-radius: 35px 35px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin: 25px 0;
+    background-color: rgb(32, 202, 202);
+}
+
+.footerPaginas {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    height: 65px;
+    font-size: 20px;
+    background-color: rgb(231, 59, 59);
+    grid-area: FooterPaginas;
+}
+
+.containerDos {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+        "nav"
+        "parrafo";
+}
+
+.containerTres {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px auto;
+    grid-template-areas:
+        "nav"
+        "h2"
+        "parrafo";
+}
+
+@media screen and (max-width: 768px) {
+    .containerUno {
+        grid-template-rows: 170px 100px auto 65px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .tituloPrincipal {
+        font-size: 50px;
+        margin: 20px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .UlNavGeneral {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .headerIndex {
+        background-image: none;
+        background-color: black;
+        height: auto;
+    }
+
+    .containerDos {
+        grid-template-rows: 150px 1fr;
+    }
+
+    .parrafo {
+        overflow: scroll;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .ulNavGeneral {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .containerTres {
+        grid-template-rows: 150px 100px auto;
+    }
+
+    .headerPaginas {
+        justify-content: center;
+    }
+
+    .botonProductos {
+        width: 80vh;
+    }
+
+}
